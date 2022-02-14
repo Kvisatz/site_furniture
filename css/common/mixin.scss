@@ -18,3 +18,37 @@
         @content;
    }
 }
+
+@mixin drop_lang{
+    position: relative;
+    &:hover .lang-list{
+        display: block;
+        border: 1px solid $color4;
+    }
+    &-selection{
+        display: block;
+        text-decoration: none;
+        color: $color2;
+        padding: 10px 0px 10px 10px;
+    }
+    &-list{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        display: none;
+        &-item{
+            &:hover .lang-list-item-link{
+                color: $color4;
+                transition: 0.5s ease;
+            }
+            padding: 5px 50px 5px 10px;
+            box-sizing: border-box;
+            &-link{
+                text-decoration: none;
+                color: $color2;
+                padding: 5px 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

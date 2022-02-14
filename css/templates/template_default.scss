@@ -1,0 +1,89 @@
+.header{
+	display: flex;
+	background-color: $color3;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	&__top{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.social-links{
+			width: 50%;
+			&__list{
+				display: flex;
+				font-size: 16px;
+				margin-left: 5%;
+				.list-link{
+					/*padding: 10px 10px;*/
+					&:hover .link{
+						transition: 0.5s ease;
+					}
+					&:hover .link__facebook{
+						color: green;
+					}
+					&:hover .link__twitter{
+						color: blue;
+					}
+					&:hover .link__pinterest{
+						color: red;
+					}
+					&:hover .link__instagram{
+						color: orange;
+					}
+					&:hover .link__linkedin{
+						color: blue;
+					}
+					.link{
+						text-decoration: none;
+						color: $color2;
+						display: block;
+						padding: 10px 10px;
+					}
+				}
+			}
+		}
+		.language-currency-account{
+			display: flex;
+			align-items: center;
+			margin-right: 5%;
+			.lang{
+				@include drop_lang;
+			}
+			.currency{
+				@include drop_lang;
+				&:hover .currency-list{
+					display: block;
+					border: 1px solid $color4;
+				}
+				.currency-selection{
+					display: flex;
+					&-text{
+						display: flex;
+						padding-right: 10px;
+						box-sizing: border-box;
+						&-value{
+							padding-right: 10px;
+							box-sizing: border-box;
+						}
+					}
+				}
+				.currency-list{
+					&-item{
+						&:hover .currency-list-item-link{
+							color: $color4;
+							transition: 0.5s ease;
+						}
+					}
+				}
+				.currency-list-item-link{
+					display: flex;
+				}
+			}
+			.account{
+				@include drop_lang;
+			}
+		}
+	}
+}
+

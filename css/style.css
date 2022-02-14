@@ -1,4 +1,173 @@
-@import url(reset.css)
-/*# sourceMappingURL=style.css.map */
+@import url(reset.css);
+@import url(all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f4f4f4;
+  width: 100%;
+  font-family: "Poppins", sans-serif; }
+  .header__top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header__top .social-links {
+      width: 50%; }
+      .header__top .social-links__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 16px;
+        margin-left: 5%; }
+        .header__top .social-links__list .list-link {
+          /*padding: 10px 10px;*/ }
+          .header__top .social-links__list .list-link:hover .link {
+            -webkit-transition: 0.5s ease;
+            transition: 0.5s ease; }
+          .header__top .social-links__list .list-link:hover .link__facebook {
+            color: green; }
+          .header__top .social-links__list .list-link:hover .link__twitter {
+            color: blue; }
+          .header__top .social-links__list .list-link:hover .link__pinterest {
+            color: red; }
+          .header__top .social-links__list .list-link:hover .link__instagram {
+            color: orange; }
+          .header__top .social-links__list .list-link:hover .link__linkedin {
+            color: blue; }
+          .header__top .social-links__list .list-link .link {
+            text-decoration: none;
+            color: #7a7a7a;
+            display: block;
+            padding: 10px 10px; }
+    .header__top .language-currency-account {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: 5%; }
+      .header__top .language-currency-account .lang {
+        position: relative; }
+        .header__top .language-currency-account .lang:hover .lang-list {
+          display: block;
+          border: 1px solid #acaaa6; }
+        .header__top .language-currency-account .lang-selection {
+          display: block;
+          text-decoration: none;
+          color: #7a7a7a;
+          padding: 10px 0px 10px 10px; }
+        .header__top .language-currency-account .lang-list {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          display: none; }
+          .header__top .language-currency-account .lang-list-item {
+            padding: 5px 50px 5px 10px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box; }
+            .header__top .language-currency-account .lang-list-item:hover .lang-list-item-link {
+              color: #acaaa6;
+              -webkit-transition: 0.5s ease;
+              transition: 0.5s ease; }
+            .header__top .language-currency-account .lang-list-item-link {
+              text-decoration: none;
+              color: #7a7a7a;
+              padding: 5px 0;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box; }
+      .header__top .language-currency-account .currency {
+        position: relative; }
+        .header__top .language-currency-account .currency:hover .lang-list {
+          display: block;
+          border: 1px solid #acaaa6; }
+        .header__top .language-currency-account .currency-selection {
+          display: block;
+          text-decoration: none;
+          color: #7a7a7a;
+          padding: 10px 0px 10px 10px; }
+        .header__top .language-currency-account .currency-list {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          display: none; }
+          .header__top .language-currency-account .currency-list-item {
+            padding: 5px 50px 5px 10px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box; }
+            .header__top .language-currency-account .currency-list-item:hover .lang-list-item-link {
+              color: #acaaa6;
+              -webkit-transition: 0.5s ease;
+              transition: 0.5s ease; }
+            .header__top .language-currency-account .currency-list-item-link {
+              text-decoration: none;
+              color: #7a7a7a;
+              padding: 5px 0;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box; }
+        .header__top .language-currency-account .currency:hover .currency-list {
+          display: block;
+          border: 1px solid #acaaa6; }
+        .header__top .language-currency-account .currency .currency-selection {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .header__top .language-currency-account .currency .currency-selection-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-right: 10px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box; }
+            .header__top .language-currency-account .currency .currency-selection-text-value {
+              padding-right: 10px;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box; }
+        .header__top .language-currency-account .currency .currency-list-item:hover .currency-list-item-link {
+          color: #acaaa6;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
+        .header__top .language-currency-account .currency .currency-list-item-link {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+      .header__top .language-currency-account .account {
+        position: relative; }
+        .header__top .language-currency-account .account:hover .lang-list {
+          display: block;
+          border: 1px solid #acaaa6; }
+        .header__top .language-currency-account .account-selection {
+          display: block;
+          text-decoration: none;
+          color: #7a7a7a;
+          padding: 10px 0px 10px 10px; }
+        .header__top .language-currency-account .account-list {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          display: none; }
+          .header__top .language-currency-account .account-list-item {
+            padding: 5px 50px 5px 10px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box; }
+            .header__top .language-currency-account .account-list-item:hover .lang-list-item-link {
+              color: #acaaa6;
+              -webkit-transition: 0.5s ease;
+              transition: 0.5s ease; }
+            .header__top .language-currency-account .account-list-item-link {
+              text-decoration: none;
+              color: #7a7a7a;
+              padding: 5px 0;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */
