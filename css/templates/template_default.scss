@@ -1,8 +1,9 @@
 .header{
 	display: flex;
+	flex-direction: column;
 	background-color: $color3;
 	width: 100%;
-	font-family: "Poppins", sans-serif;
+	font-family: $fontfam;
 	&__top{
 		width: 100%;
 		display: flex;
@@ -82,6 +83,110 @@
 			}
 			.account{
 				@include drop_lang;
+			}
+		}
+	}
+	.center{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: $color1;
+		padding: 35px 15px;
+		&__image-block{
+			&-link{
+				display: block;
+				&-image{
+					display: block;
+				}
+			}
+		}
+		&__search{
+			font-size: 16px;
+			&-form{
+				&-input{
+					padding: 15px 150px 15px 10px;
+					font-weight: 400;
+					border: 1px solid $color5;
+					border-radius: 4px;
+					color: $color6;
+					box-sizing: border-box;
+					font-size: 14px;
+				}
+				&-button{
+					padding: 15px 25px;
+					font-weight: 400;
+					border: 1px solid transparent;
+					border-radius: 4px;
+					color: $color1;
+					background-color: $color7;
+					box-sizing: border-box;
+					text-transform: uppercase;
+					box-sizing: border-box;
+					font-size: 14px;
+					&:hover{
+						background-color: $color8;
+						transition: 0.5s ease;
+					}
+				}
+			}
+		}
+		&__basket{
+			display: flex;
+			&-email{
+				&-link{
+					display: flex;
+					align-items: center;
+					text-decoration: none;
+					color: $color8;
+					padding-right: 15px;
+					&:hover .envelope{
+						background-color: $color7;
+						color: $color1;
+						transition: 0.5s ease;
+					}
+					&-envelope{
+						font-size: 30px;
+						padding: 15px;
+						border-radius: 50%;
+						border: 1px solid $color7;
+					}
+					&-text{
+						padding-left: 10px;
+						font-size: 14px;
+						color: $color9;
+						&-adress{
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+			&-shop{
+				&-link{
+					display: flex;
+					align-items: center;
+					text-decoration: none;
+					color: $color8;
+					padding-right: 15px;
+					&:hover .cart{
+						background-color: $color7;
+						color: $color1;
+						transition: 0.5s ease;
+					}
+					&-cart{
+						font-size: 30px;
+						padding: 15px;
+						border-radius: 50%;
+						border: 1px solid $color7;
+					}
+					&-text{
+						padding-left: 10px;
+						font-size: 14px;
+						color: $color9;
+						&-adress{
+							margin-top: 5px;
+						}
+					}
+				}
 			}
 		}
 	}

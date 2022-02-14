@@ -6,6 +6,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #f4f4f4;
   width: 100%;
   font-family: "Poppins", sans-serif; }
@@ -70,6 +74,7 @@
           position: absolute;
           top: 100%;
           right: 0;
+          background-color: #fff;
           display: none; }
           .header__top .language-currency-account .lang-list-item {
             padding: 5px 50px 5px 10px;
@@ -99,6 +104,7 @@
           position: absolute;
           top: 100%;
           right: 0;
+          background-color: #fff;
           display: none; }
           .header__top .language-currency-account .currency-list-item {
             padding: 5px 50px 5px 10px;
@@ -154,6 +160,7 @@
           position: absolute;
           top: 100%;
           right: 0;
+          background-color: #fff;
           display: none; }
           .header__top .language-currency-account .account-list-item {
             padding: 5px 50px 5px 10px;
@@ -169,5 +176,104 @@
               padding: 5px 0;
               -webkit-box-sizing: border-box;
                       box-sizing: border-box; }
+  .header .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #fff;
+    padding: 35px 15px; }
+    .header .center__image-block-link {
+      display: block; }
+      .header .center__image-block-link-image {
+        display: block; }
+    .header .center__search {
+      font-size: 16px; }
+      .header .center__search-form-input {
+        padding: 15px 150px 15px 10px;
+        font-weight: 400;
+        border: 1px solid #eeeeee;
+        border-radius: 4px;
+        color: #888888;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        font-size: 14px; }
+      .header .center__search-form-button {
+        padding: 15px 25px;
+        font-weight: 400;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #9abf1a;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        font-size: 14px; }
+        .header .center__search-form-button:hover {
+          background-color: #000;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
+    .header .center__basket {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .header .center__basket-email-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+        color: #000;
+        padding-right: 15px; }
+        .header .center__basket-email-link:hover .envelope {
+          background-color: #9abf1a;
+          color: #fff;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
+        .header .center__basket-email-link-envelope {
+          font-size: 30px;
+          padding: 15px;
+          border-radius: 50%;
+          border: 1px solid #9abf1a; }
+        .header .center__basket-email-link-text {
+          padding-left: 10px;
+          font-size: 14px;
+          color: #232323; }
+          .header .center__basket-email-link-text-adress {
+            margin-top: 5px; }
+      .header .center__basket-shop-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+        color: #000;
+        padding-right: 15px; }
+        .header .center__basket-shop-link:hover .cart {
+          background-color: #9abf1a;
+          color: #fff;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
+        .header .center__basket-shop-link-cart {
+          font-size: 30px;
+          padding: 15px;
+          border-radius: 50%;
+          border: 1px solid #9abf1a; }
+        .header .center__basket-shop-link-text {
+          padding-left: 10px;
+          font-size: 14px;
+          color: #232323; }
+          .header .center__basket-shop-link-text-adress {
+            margin-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */
