@@ -10,7 +10,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f4f4f4;
+  background-color: #fff;
   width: 100%;
   font-family: "Poppins", sans-serif; }
   .header__top {
@@ -23,15 +23,18 @@
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    background-color: #f4f4f4;
+    padding: 0 5%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     .header__top .social-links {
       width: 50%; }
       .header__top .social-links__list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        font-size: 16px;
-        margin-left: 5%; }
+        font-size: 16px; }
         .header__top .social-links__list .list-link {
           /*padding: 10px 10px;*/ }
           .header__top .social-links__list .list-link:hover .link {
@@ -58,8 +61,7 @@
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      margin-right: 5%; }
+              align-items: center; }
       .header__top .language-currency-account .lang {
         position: relative; }
         .header__top .language-currency-account .lang:hover .lang-list {
@@ -187,7 +189,10 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: #fff;
-    padding: 35px 15px; }
+    padding: 2% 5%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%; }
     .header .center__image-block-link {
       display: block; }
       .header .center__image-block-link-image {
@@ -275,5 +280,74 @@
           color: #232323; }
           .header .center__basket-shop-link-text-adress {
             margin-top: 5px; }
+  .header .bottom {
+    background-color: #333333;
+    width: 100%;
+    padding: 0 5%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header .bottom__categories-top {
+      background-color: #9abf1a;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 15px 65px 15px 25px;
+      border-radius: 4px;
+      margin: 3px 0;
+      font-size: 14px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .header .bottom__categories-top-head {
+        margin-left: 5px; }
+    .header .bottom__center-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header .bottom__center-menu-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .header .bottom__center-menu-list-item:hover .bottom__center-menu-list-item-link {
+          color: #9abf1a;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+          position: relative; }
+        .header .bottom__center-menu-list-item-link {
+          color: #fff;
+          text-decoration: none;
+          padding: 15px;
+          font-size: 14px; }
+          .header .bottom__center-menu-list-item-link-drop {
+            margin-right: 5px; }
+        .header .bottom__center-menu-list-item-droplist {
+          position: absolute;
+          background-color: #fff;
+          border: 1px solid #ebebeb; }
+          .header .bottom__center-menu-list-item-droplist-item-link {
+            color: #232323;
+            text-decoration: none;
+            padding: 10px 50px 10px 15px;
+            display: block;
+            font-size: 14px;
+            font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

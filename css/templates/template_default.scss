@@ -1,7 +1,8 @@
+
 .header{
 	display: flex;
 	flex-direction: column;
-	background-color: $color3;
+	background-color: $color1;
 	width: 100%;
 	font-family: $fontfam;
 	&__top{
@@ -9,12 +10,14 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		background-color: $color3;
+		padding: 0 5%;
+		box-sizing: border-box;
 		.social-links{
 			width: 50%;
 			&__list{
 				display: flex;
 				font-size: 16px;
-				margin-left: 5%;
 				.list-link{
 					/*padding: 10px 10px;*/
 					&:hover .link{
@@ -47,7 +50,6 @@
 		.language-currency-account{
 			display: flex;
 			align-items: center;
-			margin-right: 5%;
 			.lang{
 				@include drop_lang;
 			}
@@ -91,7 +93,9 @@
 		align-items: center;
 		justify-content: space-between;
 		background-color: $color1;
-		padding: 35px 15px;
+		padding: 2% 5%;
+		box-sizing: border-box;
+		width: 100%;
 		&__image-block{
 			&-link{
 				display: block;
@@ -188,6 +192,73 @@
 					}
 				}
 			}
+		}
+	}
+	.bottom{
+		background-color: $color10;
+		width: 100%;
+		padding: 0 5%;
+		box-sizing: border-box;
+		color: $color1;
+		display: flex;
+		&__categories{
+			&-top{
+				background-color: $color7;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 15px 65px 15px 25px;
+				border-radius: 4px;
+				margin: 3px 0;
+				font-size: 14px;
+				box-sizing: border-box;
+				&-head{
+					margin-left: 5px;
+				}
+			}
+		}
+		&__center-menu{
+			display: flex;
+			align-items: center;
+			&-list{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&-item{
+					&:hover .bottom__center-menu-list-item-link{
+						color: $color7;
+						transition: 0.5s ease;
+						position: relative;
+					}
+					&-link{
+						color: $color1;
+						text-decoration: none; 
+						padding: 15px;
+						font-size: 14px;
+						&-drop{
+							margin-right: 5px;
+						}
+					}
+					&-droplist{
+						position: absolute;
+						background-color: $color1;
+						border: 1px solid $color11;
+						&-item{
+							&-link{
+								color: $color9;
+								text-decoration: none;
+								padding: 10px 50px 10px 15px;
+								display: block;
+								font-size: 14px;
+								font-weight: 400;
+							}
+						}
+					}
+				}
+			}
+		}
+		&__sale-animation{
+			
 		}
 	}
 }
