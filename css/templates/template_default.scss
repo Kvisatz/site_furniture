@@ -142,6 +142,9 @@
 		&__basket{
 			display: flex;
 			&-email{
+				@include desktop{
+					display: none;
+				} 
 				&-link{
 					display: flex;
 					align-items: center;
@@ -208,7 +211,7 @@
 		display: flex;
 		justify-content: flex-start;
 		&__categories{
-			width: 17%;
+			width: 21%;
 			position: relative;
 			&-top{
 				background-color: $color7;
@@ -300,10 +303,50 @@
 			display: flex;
 			align-items: center;
 			width: 65%;
+			@include desktop{
+				position: relative;
+				&:hover .bottom__center-menu-list{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				position: absolute;
+				background-color: $color1;
+				top: 100%;
+				left: 20px;
+				border: 1px solid $color7;
+					&-item{
+						&-link{
+							color: $color9;
+							padding: 15px;
+							display: block;
+						}
+					}
+				}
+			}
+			&-adaptation{
+				display: none;
+				font-size: 14px;
+				@include desktop{
+					display: block;
+					margin-left: 20px;
+				}
+
+				&-link{
+					color: $color1;
+					text-decoration: none;
+
+					&-head{
+						margin-left: 10px;
+					}
+				}	
+			}
 			&-list{
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				@include desktop{
+					display: none;
+				}
 				&-item{
 					position: relative;
 					&:hover > .bottom__center-menu-list-item-link{
@@ -314,6 +357,9 @@
 						opacity: 1;
 						top: 100%;
 						transition: 1s ease;
+						@include desktop{
+							display: none;
+						}
 					}
 					&-link{
 						color: $color1;
@@ -322,6 +368,11 @@
 						font-size: 14px;
 						&-drop{
 							margin-right: 5px;
+							&-arrow{
+								@include desktop{
+									display: none;
+								}
+							}
 						}
 					}
 					&-droplist{
