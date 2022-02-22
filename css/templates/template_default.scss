@@ -18,8 +18,26 @@
 		background-color: $color3;
 		padding: 0 5%;
 		box-sizing: border-box;
+		@include laptop{
+			justify-content: center;
+		}
+		@include tablets{
+			justify-content: center;
+		}
+		@include phones{
+			justify-content: center;
+		}
 		.social-links{
 			width: 50%;
+			@include laptop{
+				display: none;
+			}
+			@include tablets{
+				display: none;
+			}
+			@include phones{
+				display: none;
+			}
 			&__list{
 				display: flex;
 				font-size: 16px;
@@ -90,6 +108,15 @@
 			}
 			.account{
 				@include drop_lang;
+				@include laptop{
+					display: none;
+				}
+				@include tablets{
+					display: none;
+				}
+				@include phones{
+					display: none;
+				}
 			}
 		}
 	}
@@ -101,7 +128,25 @@
 		padding: 2% 5%;
 		box-sizing: border-box;
 		width: 100%;
+		@include laptop{
+			justify-content: center;
+		}
+		@include tablets{
+			justify-content: center;
+		}
+		@include phones{
+			justify-content: center;
+		}
 		&__image-block{
+			@include laptop{
+				align-self: center;
+			}
+			@include tablets{
+				align-self: center;
+			}
+			@include phones{
+				align-self: center;
+			}
 			&-link{
 				display: block;
 				&-image{
@@ -111,6 +156,15 @@
 		}
 		&__search{
 			font-size: 16px;
+			@include laptop{
+				display: none;
+			}
+			@include tablets{
+				display: none;
+			}
+			@include phones{
+				display: none;
+			}
 			&-form{
 				&-input{
 					padding: 15px 150px 15px 10px;
@@ -141,6 +195,15 @@
 		}
 		&__basket{
 			display: flex;
+			@include laptop{
+				display: none;
+			}
+			@include tablets{
+				display: none;
+			}
+			@include phones{
+				display: none;
+			}
 			&-email{
 				@include desktop{
 					display: none;
@@ -210,8 +273,17 @@
 		color: $color1;
 		display: flex;
 		justify-content: flex-start;
+		@include laptop{
+			display: none;
+		}
+		@include tablets{
+			display: none;
+		}
+		@include phones{
+			display: none;
+		}
 		&__categories{
-			width: 21%;
+			flex-grow: 1;
 			position: relative;
 			&-top{
 				background-color: $color7;
@@ -302,7 +374,7 @@
 		&__center-menu{
 			display: flex;
 			align-items: center;
-			width: 65%;
+			flex-grow: 2;
 			@include desktop{
 				position: relative;
 				&:hover .bottom__center-menu-list{
@@ -400,6 +472,7 @@
 		&__sale-animation{
 			display: flex;
 			align-items: center;
+			flex-grow: 1;
 			&-sign{
 				font-size: 30px;
 				border: 1px solid $color7;
