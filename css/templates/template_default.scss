@@ -128,7 +128,7 @@
 		padding: 2% 5%;
 		box-sizing: border-box;
 		width: 100%;
-		@include laptop{
+		/*@include laptop{
 			justify-content: center;
 		}
 		@include tablets{
@@ -136,6 +136,23 @@
 		}
 		@include phones{
 			justify-content: center;
+		}*/
+		&__adaptive-block{
+			width: 15%;
+			display: flex;
+			justify-content: space-around;
+			@include desktopLarge{
+				display: none;
+			}
+			@include desktop{
+				display: none;
+			}
+			&-link{
+				text-decoration: none;
+				color: $color9;
+				font-size: 20px;
+				font-weight: 400;
+			}
 		}
 		&__image-block{
 			@include laptop{
@@ -151,6 +168,18 @@
 				display: block;
 				&-image{
 					display: block;
+					@include laptop{
+						width: 60%;
+						margin: 0 auto;
+					}
+					@include tablets{
+						width: 60%;
+						margin: 0 auto;
+					}
+					@include phones{
+						width: 60%;
+						margin: 0 auto;
+					}
 				}
 			}
 		}
@@ -497,8 +526,6 @@
 	height: 100px;
 	width: 100%;
 	background-color: #000;
-	display: grid;
-	grid-template-columns: 5;
-	grid-template-rows: 2;
+	display: flex;
 }
 

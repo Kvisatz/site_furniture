@@ -238,22 +238,34 @@
     padding: 2% 5%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 100%; }
-    @media screen and (min-width: 769px) and (max-width: 989px) {
-      .header .center {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
-    @media screen and (min-width: 520px) and (max-width: 768px) {
-      .header .center {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
-    @media screen and (max-width: 519px) {
-      .header .center {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
+    width: 100%;
+    /*@include laptop{
+    	justify-content: center;
+    }
+    @include tablets{
+    	justify-content: center;
+    }
+    @include phones{
+    	justify-content: center;
+    }*/ }
+    .header .center__adaptive-block {
+      width: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      @media screen and (min-width: 1200px) {
+        .header .center__adaptive-block {
+          display: none; } }
+      @media screen and (min-width: 990px) and (max-width: 1200px) {
+        .header .center__adaptive-block {
+          display: none; } }
+      .header .center__adaptive-block-link {
+        text-decoration: none;
+        color: #232323;
+        font-size: 20px;
+        font-weight: 400; }
     @media screen and (min-width: 769px) and (max-width: 989px) {
       .header .center__image-block {
         -ms-flex-item-align: center;
@@ -270,6 +282,18 @@
       display: block; }
       .header .center__image-block-link-image {
         display: block; }
+        @media screen and (min-width: 769px) and (max-width: 989px) {
+          .header .center__image-block-link-image {
+            width: 60%;
+            margin: 0 auto; } }
+        @media screen and (min-width: 520px) and (max-width: 768px) {
+          .header .center__image-block-link-image {
+            width: 60%;
+            margin: 0 auto; } }
+        @media screen and (max-width: 519px) {
+          .header .center__image-block-link-image {
+            width: 60%;
+            margin: 0 auto; } }
     .header .center__search {
       font-size: 16px; }
       @media screen and (min-width: 769px) and (max-width: 989px) {
@@ -622,8 +646,8 @@
   height: 100px;
   width: 100%;
   background-color: #000;
-  display: grid;
-  grid-template-columns: 5;
-  grid-template-rows: 2; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
