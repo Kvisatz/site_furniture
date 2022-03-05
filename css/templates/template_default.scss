@@ -523,9 +523,90 @@
 	flex-grow: 1;
 }
 .footer{
-	height: 100px;
 	width: 100%;
 	background-color: #000;
 	display: flex;
+	flex-direction: column;
+	font-family: $fontfam;
+	font-weight: 400;
+	font-size: 14px;
+	&__info{
+		background-color: rgba(255, 255, 255, 0.1);
+		display: flex;
+		flex-direction: flex-start;
+		align-items: center;
+		justify-content: space-around;
+		&-store{
+			@include footer_block;
+		}
+		&-account{
+			@include footer_block;
+			&-list-item-icon{
+				color: $color6;
+				margin-right: 5px;
+				font-size: 10px;
+			}
+		}
+		&-products{
+			@include footer_block;
+			&-list-item-icon{
+				color: $color6;
+				margin-right: 5px;
+				font-size: 10px;
+			}
+		}
+		&-company{
+			@include footer_block;
+			&-list-item-icon{
+				color: $color6;
+				margin-right: 5px;
+				font-size: 10px;
+			}
+		}
+		&-feedback{
+			color: $color6;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 20%;
+			background-color: rgba(255, 255, 255, 0.2);
+			padding: 15px;
+			&-quotes{
+				font-size: 50px;
+				color: $color7;
+			}
+			&-comment{
+				font-weight: 400;
+				font-family: $fontfam;
+				font-size: 14px;
+				line-height: 1.5;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			&-profile{
+				margin-bottom: 15px;
+				&-foto{
+					background-image: url(../images/footer-foto.png);
+					width: 100px;
+					height: 100px;
+					border-radius:50%;
+					}
+			}
+			&-switcher{
+				margin-bottom: 15px;
+				&-button{
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					border: 1px solid $color1;
+					background-color: $color1;
+					padding: 0;
+				}
+			}
+		}
+	}
+	&__subscribe{
+		
+	}
 }
 
