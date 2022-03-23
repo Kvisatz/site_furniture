@@ -367,27 +367,63 @@
 					</li>
 				</ul>
 			</div>
-			<div class="footer__info-feedback">
-				<i class="fa-solid fa-quote-right footer__info-feedback-quotes"></i>
-				<p class="footer__info-feedback-comment">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ex nulla, consequat vitae blandit vel, pretium vel ligula.
-				</p>
-				<div class="footer__info-feedback-profile">
-					<div class="footer__info-feedback-profile-foto">
+			<div class="footer__info-feedback" id="feedback">
+				<div class="footer__info-feedback-block active" id="first_feed">
+					<i class="fa-solid fa-quote-right footer__info-feedback-block-quotes"></i>
+					<p class="footer__info-feedback-block-comment">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ex nulla, consequat vitae blandit vel, pretium vel ligula.
+					</p>
+					<div class="footer__info-feedback-block-profile">
+						<div class="footer__info-feedback-block-profile-foto">
+						</div>
+						<div class="footer__info-feedback-block-profile-name">
+							<span class="footer__info-feedback-block-profile-name-span">Meck Jeckno</span>
+						</div>
+						<div class="footer__info-feedback-block-profile-proffesion">
+							<span class="footer__info-feedback-block-profile-proffesion-span">Web disigner</span>
+						</div>
+						
 					</div>
-					<div class="footer__info-feedback-profile-name">
-						<span class="footer__info-feedback-profile-name-span">Meck Jeckno</span>
-					</div>
-					<div class="footer__info-feedback-profile-proffesion">
-						<span class="footer__info-feedback-profile-proffesion-span">Web disigner</span>
-					</div>
-					
 				</div>
-				<div class="footer__info-feedback-switcher">
-					<button class="footer__info-feedback-switcher-button first"></button>
-					<button class="footer__info-feedback-switcher-button second"></button>
-					<button class="footer__info-feedback-switcher-button third"></button>
+				<div class="footer__info-feedback-block" id="second_feed">
+					<i class="fa-solid fa-quote-right footer__info-feedback-block-quotes"></i>
+					<p class="footer__info-feedback-block-comment">
+						SLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ex nulla, consequat vitae blandit vel, pretium vel ligula.
+					</p>
+					<div class="footer__info-feedback-block-profile">
+						<div class="footer__info-feedback-block-profile-foto">
+						</div>
+						<div class="footer__info-feedback-block-profile-name">
+							<span class="footer__info-feedback-block-profile-name-span">Meck Jeckno</span>
+						</div>
+						<div class="footer__info-feedback-block-profile-proffesion">
+							<span class="footer__info-feedback-block-profile-proffesion-span">Web disigner</span>
+						</div>
+						
+					</div>
 				</div>
+				<div class="footer__info-feedback-block" id="third_feed">
+					<i class="fa-solid fa-quote-right footer__info-feedback-block-quotes"></i>
+					<p class="footer__info-feedback-block-comment">
+						TLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ex nulla, consequat vitae blandit vel, pretium vel ligula.
+					</p>
+					<div class="footer__info-feedback-block-profile">
+						<div class="footer__info-feedback-block-profile-foto">
+						</div>
+						<div class="footer__info-feedback-block-profile-name">
+							<span class="footer__info-feedback-block-profile-name-span">Meck Jeckno</span>
+						</div>
+						<div class="footer__info-feedback-block-profile-proffesion">
+							<span class="footer__info-feedback-block-profile-proffesion-span">Web disigner</span>
+						</div>
+						
+					</div>
+				</div>
+				<ul class="footer__info-feedback-switcher">
+					<li class="footer__info-feedback-switcher-item active" data-switch = "first_feed"><button class="footer__info-feedback-switcher-item-button button"></button></li>
+					<li class="footer__info-feedback-switcher-item" data-switch = "second_feed"><button class="footer__info-feedback-switcher-item-button button"></button></li>
+					<li class="footer__info-feedback-switcher-item" data-switch = "third_feed"><button class="footer__info-feedback-switcher-item-button button"></button></li>
+				</ul>
 			</div>
 		</div>
 		<div class="footer__subscribe">
@@ -402,5 +438,15 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/tabs.js"></script>
+	<script>
+		'use strict';
+		switcherTab.init();
+		/*let bd = document.querySelector('body');
+		console.log(bd);
+		bd.addEventListener('click', (evt)=>{
+			evt.target.classList.toggle('active');
+		})*/
+	</script>
 </body>
 </html>
