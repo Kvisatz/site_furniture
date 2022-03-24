@@ -597,9 +597,59 @@
 			}
 		}
 	}
-	&__subscribe{
-		
+	#second_feed .footer__info-feedback-block-profile-foto{
+		background-image: url(../images/footer-foto1.png);
 	}
+	#third_feed .footer__info-feedback-block-profile-foto{
+		background-image: url(../images/footer-foto2.png);
+	}
+	&__subscribe{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		&-info{
+			color: $color1;
+			font-size: 14px;
+			&-head{
+				text-transform: uppercase;
+				font-size: 24px;
+			}
+			&-text{
+				color: $color2;
+			}
+		}
+		&-block{
+			font-size: 16px;
+			&-form{
+				&-input{
+					padding: 15px 150px 15px 10px;
+					font-weight: 400;
+					border: 1px solid $color5;
+					border-radius: 4px;
+					color: $color6;
+					box-sizing: border-box;
+					font-size: 14px;
+				}
+				&-button{
+					padding: 15px 25px;
+					font-weight: 400;
+					border: 1px solid transparent;
+					border-radius: 4px;
+					color: $color1;
+					background-color: $color7;
+					box-sizing: border-box;
+					text-transform: uppercase;
+					box-sizing: border-box;
+					font-size: 14px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		&-pay{
+
+		}
+	}
+	
 }
 
 
