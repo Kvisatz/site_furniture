@@ -1,14 +1,26 @@
+$color1: #fff;
+$color2: #7a7a7a;
+$color3: #f4f4f4;
+$color4: #acaaa6;
+$color5: #eeeeee;
+$color6: #888888;
+$color7: #9abf1a;
+$color8: #000;
+$color9: #232323;
+$color10: #333333;
+$color11: #ebebeb;
+
 $width_base: 1100px;
 
 $desctop_max: 1200px;
-$desctop_min: 993px;
+$desctop_min: 990px;
 
-$laptop_max: 992px;
+$laptop_max: 989px;
 $laptop_min: 769px;
 
 $tablets_max: 768px;
-$tablets_min: 481px;
+$tablets_min: 520px;
 
-$phones_max: 480px;
+$phones_max: 519px;
 
-$fontfam: "Heebo" , san-serif;
+$fontfam: "Poppins", sans-serif;
