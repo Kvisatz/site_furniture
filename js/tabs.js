@@ -11,7 +11,7 @@ let switcherTab = {
 	exeption: (obj)=>{//метод для логирования ошибок
 		if(obj === null){
 			console.log('Error');
-			return false;
+			return false;//если обьект пуст то логирует ошибку и возвращает false
 		}
 		else{
 			return true;
@@ -26,32 +26,40 @@ let switcherTab = {
 					this.exeption(null);//если родитель элемента не тег ли то передаем в метод логирования пустой обьект возвращаем false
 					return 0;//прекращаем выполнение метода
 				}//если родитель обьекта клика тег ли то метод работает дальше
-				let parentElActive = this.switcherObj.querySelector('.footer__info-feedback-switcher-item.active');
-				this.removeClass(parentElActive);
-				this.addClass(parentEl);
-				let valueAttribute = parentEl.getAttribute('data-switch');
-				if(valueAttribute === null){
-					this.exeption(null);
-					return 0;
-				}
-				let blockElActive = this.switcherObj.querySelector('#' + valueAttribute);
-				if(blockElActive === null){
-					this.exeption(null);
-					return 0;
-				}
+				let parentElActive = this.switcherObj.querySelector('.footer__info-feedback-switcher-item.active');//сохраняем в переменную элемент из ds,hfyyjuj обьекта с классом active
+				this.removeClass(parentElActive);//удаляем класс active пользовательским методом с элемента на котором этот класс уже есть
+				this.addClass(parentEl); //добавляем класс active пользовательским методом на родительский ли кнопки по которой кликнули сохраненный в переменной parentEl
+				let valueAttribute = parentEl.getAttribute('data-switch');//сохраняем в переменную значение пользовательского аттрибута элемента ли в котором лежит кнопка по которой кликнули
+				if(valueAttribute === null){//проверка значения аттрибута на пустоту
+					this.exeption(null);//если значение аттрибута не найдено(пусто) вызываем метод логирования который логирует ошибку
+					return 0;//заканчиваем выполнение метода если аттрибут не найден
+				}//если аттрибут прошел проверку метод продолжается
+				let blockElActive = this.switcherObj.querySelector('#' + valueAttribute);//сохраняем в переменную элемент DOM выбранный из нашего обьекта по id который соответствует аттрибуту элемента по которому кликнули
+				if(blockElActive === null){//проверяем есть ли такой обьект DOM в нашем обьекте
+					this.exeption(null);//если нет логируем ошибку
+					return 0;//и завершаем метод
+				}//если обьект найден то метод продолжается
 				else{
-					let blockActive = this.switcherObj.querySelector('.footer__info-feedback-block.active');
-					this.removeClass(blockActive);
-					this.addClass(blockElActive);
+					let blockActive = this.switcherObj.querySelector('.footer__info-feedback-block.active');//сохраняем в переменную div c комментарием на котором есть класс active
+					this.removeClass(blockActive);//убираем класс active с элемента комментария который его содержит
+					this.addClass(blockElActive);//добавляем класс active на элемент который соответствует своим id аттрибуту тега ли кнопки по которой кликнули
 				}
 			}
 		})
 	}, 
-	init: function(){
-		this.switcherObj = document.querySelector(this.switcherElement);
-		if(this.exeption(this.switcherObj) == false){
-			return 0;
+	time: function(){
+		console.log(this.switcherObj);
+		let blocks = this.switcherObj.querySelectorAll('.footer__info-feedback-block');
+		for(let block of blocks){
+			console.log("1");
 		}
-		this.checked();
+	},
+	init: function(){//функция инициализации
+		this.switcherObj = document.querySelector(this.switcherElement);//через свойство нашего обьекта содержащее id выбираем обьект из DOM и сохраняем в свойство с пустым обьектом
+		if(this.exeption(this.switcherObj) == false){//методом логирования проверяем обьект выбранный из DOM по id если он пуст то метод логирования вернет false
+			return 0;//и метод инициализации завершится
+		}//если обьект из DOM не пустой то метод продолжается
+		this.checked();// вызываем метод переключения в контексте выбранного обьекта
+		this.time();
 	}
 }
